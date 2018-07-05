@@ -13,9 +13,9 @@ class FinishedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finished)
 
-//        val league = intent.getStringExtra(EXTRA_LEAGUE)
-//        val skill = intent.getStringExtra(EXTRA_SKILL)
+        val league = intent.getStringExtra(EXTRA_LEAGUE)
+        val skill = intent.getStringExtra(EXTRA_SKILL)
 
-//        searchLeagueText.text = "Looking for $league $skill league near you..."
+        searchLeagueText.text = "Looking for $league $skill league near you..."
     }
 }

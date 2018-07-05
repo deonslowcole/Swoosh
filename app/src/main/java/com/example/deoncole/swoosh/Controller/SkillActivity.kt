@@ -39,8 +39,8 @@ class SkillActivity : BaseActivity() {
     fun onSkillFinishedClicked(view: View){
         if (skill != ""){
             val finishedActivity = Intent (this, FinishedActivity::class.java)
-//            finishedActivity.putExtra(EXTRA_LEAGUE, league)
-//            finishedActivity.putExtra(EXTRA_SKILL, skill)
+            finishedActivity.putExtra(EXTRA_LEAGUE, league)
+            finishedActivity.putExtra(EXTRA_SKILL, skill)
             startActivity(finishedActivity)
         } else {
             Toast.makeText(this, "Please select a skill level", Toast.LENGTH_SHORT).show()
